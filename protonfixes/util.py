@@ -49,6 +49,14 @@ def protonprefix():
         'pfx/')
 
 
+def steamapps_dir():
+    """ Returns the path to steamapps
+    """
+
+    # Default location: ~/.local/share/Steam/steamapps
+    return os.path.join(protonprefix(), '/../../../../')
+
+
 def protonnameversion():
     """ Returns the version of proton from sys.argv[0]
     """
